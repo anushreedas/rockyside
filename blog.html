@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/main.css"></link>
+  <link rel="stylesheet" href="stylesheets/blog.css"></link>
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+  <script>
+    var config = {
+    apiKey: "AIzaSyCzcPNxPwHidb1LYPmDnBIL3qD_MDX5oCY",
+    authDomain: "rockysideofevergreen.firebaseapp.com",
+    databaseURL: "https://rockysideofevergreen.firebaseio.com",
+    projectId: "rockysideofevergreen",
+    storageBucket: "rockysideofevergreen.appspot.com",
+    messagingSenderId: "241302462413"
+  };
+  firebase.initializeApp(config);
+  </script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/blog.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body  onload="setup()">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h1>Rocky Side of EverGreen</h1>
+    </div>
+  </header>
+  <div id="content">
+    <p id="top" style="margin:0px;"></p>
+      <div id="mySidenav" class="sidenav">
+  <a id="s" href="#top" onclick="openCity('sketch', this, '#00ff80')">Sketch</a>
+  <a id="p" href="#top" onclick="openCity('paint', this, '#0080ff')">Paint</a>
+  <a id="w" href="#top" onclick="openCity('graphic', this, '#ff0040')">Graphic</a>
+  <a id="c" href="#top" onclick="openCity('photo', this, '#ffaa00')">Photo</a>
+</div>
+      <button class="tablink" onclick="openCity('new', this, '#0D6082')" id="defaultOpen">New</button>
+      <button class="tablink" onclick="openCity('sketch', this, '#4895B5')" id="h1">Sketch</button>
+      <button class="tablink" onclick="openCity('paint', this, '#004F3B')" id="h2">Paint</button>
+      <button class="tablink" onclick="openCity('graphic', this, '#5C1D17')" id="h3">Graphic</button>
+      <button class="tablink" onclick="openCity('photo', this, '#820D21')" id="h4">Photo</button>
+
+      <article id="new" class="tabcontent">
+        <section id="newPost"></section>
+      </article>
+
+      <article id="sketch" class="tabcontent">
+        <section id="sketchPost"></section>
+      </article>
+
+      <article id="paint" class="tabcontent">
+        <section id="paintPost"></section>
+      </article>
+
+      <article id="graphic" class="tabcontent">
+        <section id="graphicPost"></section>
+      </article>
+
+      <article id="photo" class="tabcontent">
+        <section id="photoPost"></section>
+      </article>
+  </div>
+  <footer>
+    <div id="wrapper">
+      <div id="left"><h1>Rocky Side of EverGreen</h1></div>
+      <div id="center"><a href=" index.html">Home</a> <a href=" about.html">About</a></div>
+      <div id="right"></br><a href="https://www.behance.net/anushree_das">Behance</a>
+      </br><a href="http://pin.it/fB7zDls">Pinterest</a>
+      </br><a href="https://www.instagram.com/anushree_das/">Instagram</a></div>
+    </div>
+    <p id="last">Copyright &#169; 2017 Anushree Das</p>
+  </footer>
+</body>
+
+</html>
