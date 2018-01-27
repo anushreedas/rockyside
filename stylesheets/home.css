@@ -1,0 +1,90 @@
+@media screen and (max-width: 485px){
+  .panel {min-width: 100px;display:inline;}
+  .imgbuttons{max-width: 60%; margin:auto;}
+}
+  @media screen and (min-width: 485px){
+  .panel {min-width: 300px;display:inline-block;}
+    .imgbuttons{max-width: 100%;margin: 5px;}
+}
+
+.panel{
+  position: relative;
+  max-height: 500px;
+  max-width: 24.5%;
+
+  min-height: auto;
+
+  box-sizing: border-box;
+  border-right: 2px solid white;
+
+}
+.imgbuttons{
+  max-height:100%;
+
+  border: 1px solid black;
+  border-radius: 25px;
+
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform ease 0.6s;
+}
+
+section{
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+#buttons{
+  background-color: #ecf9f2;
+  padding: 50px 0px 50px 0px ;
+}
+div#sketch{
+  background: #ffd480;
+  background: radial-gradient(circle, #ffd480,#ffc34d );
+}
+
+
+div#paint{
+  background:#00e6ac;
+  background: radial-gradient(circle, #00e6ac,#00b386 );
+}
+
+div#pen{
+  background:#9999ff;
+  background: radial-gradient(circle, #9999ff,#6666ff );
+}
+
+div#cam{
+  background:#ff6666;
+  background: radial-gradient(circle, #ff6666,#ff3333 );
+}
+
+.front{
+  max-width: 100%;
+  max-height: 100%;
+}
+.panel:hover .imgbuttons{
+    transform:matrix(0.3, 0, 0, 0.3, 0, -100);
+}
+.back{
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.0;
+  transition: opacity ease 0.6s;
+}
+.panel:hover .back{
+  opacity: 1.0;
+  z-index: 0;
+}
+
+
+.sec1{
+  width: 100%;
+  height: auto;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

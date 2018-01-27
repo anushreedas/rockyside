@@ -1,0 +1,158 @@
+
+@media screen and (max-width: 485px){
+  div #content {font-size:0.8em;}
+  #mySidenav a{font-size: 10px;}
+  .tablink {  font-size: 14px;}
+  article section div p {font-size: 10px;}
+}
+
+@media screen and (min-width: 485px){
+  #mySidenav a{font-size: 20px;}
+  .tablink {  font-size: 17px;}
+    article section div p {font-size: 14px;}
+}
+ul{position:absolute;}
+/*********Hoevrable Side Nav***********/
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+     /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    box-shadow: 0 0 0 1px rgba(128, 255, 255, 0.2);
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#s {
+    top: 220px;
+    background-color: #00ff80;
+}
+
+#p {
+    top: 280px;
+    background-color: #0080ff;
+}
+
+#w {
+    top: 340px;
+    background-color: #ff0040;
+}
+
+#c {
+    top: 400px;
+    background-color: #ffaa00;
+}
+
+/**********Tab Headers************/
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px 0px 0px 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+/* Style each tab content individually */
+#new {background-color:#0D6082;}
+#sketch {background-color:#4895B5;}
+#paint {background-color:#004F3B;}
+#graphic {background-color:#5C1D17;}
+#photo {background-color:#820D21;}
+
+.tabcontent div{
+  width:100%;
+  border-bottom: 1px solid black;
+  padding:0px;
+  margin: auto;
+}
+
+.tabcontent div p{
+  text-align: right;
+  font-style: italic;
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+  color: #e6e6ff;
+
+  background-color: #000d1a;
+  border-radius: 0px 0px 5px 5px;
+  font-family: sans-serif;
+
+}
+
+#postDate{
+  text-align: left;
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+.tabcontent img{
+  width:100%;
+  height:auto;
+}
+
+#new div p{
+  background: linear-gradient(to bottom right,#09455d,#073446 );
+}
+
+#new #postDate{
+  background: linear-gradient(to top left,#09455d,#073446 );
+}
+
+#sketch div p{
+  background: linear-gradient(to bottom right,#3a7892,#336980 );
+}
+
+#sketch #postDate{
+  background: linear-gradient(to top left,#3a7892,#336980 );
+}
+
+#paint div p{
+  background: linear-gradient(to bottom right,#003326,#001a13 );
+}
+
+#paint #postDate{
+  background: linear-gradient(to top left,#003326,#001a13 );
+}
+
+#graphic div p{
+  background: linear-gradient(to bottom right,#521914,#3d130f );
+}
+
+#graphic #postDate{
+  background: linear-gradient(to top left,#521914,#3d130f );
+}
+#photo div p{
+  background: linear-gradient(to bottom right,#740b1d,#5d0917 );
+}
+
+#photo #postDate{
+  background: linear-gradient(to top left,#740b1d,#5d0917 );
+}

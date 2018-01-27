@@ -1,0 +1,121 @@
+body {margin: 0px;}
+div,p{
+  margin:0 px;
+  padding: 0px; 
+}
+ @media screen and (max-width: 485px){
+  nav li a {font-size: 0.2em; }
+  #wrapper{height: 150px; font-size:0.8em;}
+
+ header div{font-size: 1.4em;min-height: 200px;}
+ #left h1{font-size: 1.4em;}
+}
+
+@media screen and (min-width: 486px){ 
+  nav li a {font-size: 1.8em;}
+ header div{font-size: 2.4em;min-height: 300px;}
+   #wrapper{height: 200px;}
+ }
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:rgba(0, 128, 96, 0.9);
+  position: fixed;
+  top:0;
+  z-index: 1;
+  width: 100%; 
+}
+
+nav li{display: inline-block;}
+
+nav li a{
+  display: block;
+  text-decoration: none;
+  padding: 8px 8px;
+  color: white;
+  font-family: sans-serif;
+
+  font-variant: small-caps;
+}
+
+nav li a:hover{
+    background-color:rgba(0, 128, 96, 0.5);;
+}
+
+.active{
+  background-color:hsl(165, 100%, 5%);
+}
+
+header div{
+
+  padding:100px 50px 50px 50px;
+  font-family:Pristina;
+
+}
+
+header h1{margin: 0px; padding:0px;}
+header div::first-letter{
+  font-family: Parchment;
+  font-size: 3.2em;
+  letter-spacing: 5px;
+}
+
+#wrapper{width:100%;color: white;overflow: hidden;}
+
+#wrapper div{ display: inline-block;}
+
+#left{
+  float:left;
+  width:40%;
+  height:100%;
+  background-color: #00332c;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#center{
+  float:left;
+  width:30%;
+  height:100%;
+  background-color: #004d42;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#right{
+  float:left;
+  width: 30%;
+  height:100%;
+  background-color: #005e51;
+}
+#right a{padding: 20px;color:white; text-decoration: none;}
+#right a:hover{color:cyan; text-decoration: underline;;}
+#right a:visited{color:white; text-decoration: none;}
+#last{
+  background-color: #001a16;
+  color:white;
+  margin: 0px;
+  font-style: italic;
+}
+
+#center a{
+  background-color: #001a1a;
+  text-decoration: none;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-out;
+  cursor: pointer;
+}
+
+#center a:hover{
+  box-shadow: 0 0 0 2px rgba(128, 255, 255, 0.2);
+}
