@@ -1,2 +1,3 @@
-# rockyside
-Portfolio Website
+#Portfolio Website
+
+Website created using HTML, CSS, JavaScript
